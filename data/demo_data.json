@@ -106,7 +106,7 @@
       },
       {
         "id": "tenacity",
-        "name": "Persisting",
+        "name": "Persistence",
         "cornerstone": "motivational",
         "color": "var(--p-tenacity)",
         "blurb": "Weathering inevitable problems, crises and failures."

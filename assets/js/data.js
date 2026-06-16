@@ -39,7 +39,7 @@ window.SYMETA = (function () {
     { id:'influence',       name:'Influence',       cornerstone:'relational',   color:'var(--p-influence)',       blurb:'Persuading stakeholders to follow one’s lead under uncertainty.' },
     { id:'autonomy',        name:'Vitality',        cornerstone:'motivational', color:'var(--p-autonomy)',        blurb:'Holding oneself accountable to high-performance standards.' },
     { id:'intensity',       name:'Resilience',      cornerstone:'motivational', color:'var(--p-intensity)',       blurb:'Managing one’s cognitive, emotional and physical resources.' },
-    { id:'tenacity',        name:'Persisting',      cornerstone:'motivational', color:'var(--p-tenacity)',        blurb:'Weathering inevitable problems, crises and failures.' },
+    { id:'tenacity',        name:'Persistence',      cornerstone:'motivational', color:'var(--p-tenacity)',        blurb:'Weathering inevitable problems, crises and failures.' },
   ];
 
   const benchmarks = {

@@ -37,7 +37,7 @@ organised in 4 levers:
   - Thinking: Vision, Strategy, Resourcefulness
   - Operating: Execution, Innovation, Decision Making
   - Relating: Collaboration, Direction, Influence
-  - Adapting: Vitality, Resilience, Persisting
+  - Adapting: Vitality, Resilience, Persistence
 Gear scores run 0-100 (benchmark bands ~45-70; <40 is a liability, >=75 a strength). Team
 Health is measured on the ABC model (Alliance, Balance, Coordination) on a 1-5 scale.
 

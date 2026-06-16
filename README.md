@@ -28,7 +28,7 @@ The two teams are deliberately contrasted:
 ### The framework
 - **12 Gears** in **4 levers**: Thinking (Vision, Strategy, Resourcefulness),
   Operating (Execution, Innovation, Decision Making), Relating (Collaboration, Direction,
-  Influence), Adapting (Vitality, Resilience, Persisting).
+  Influence), Adapting (Vitality, Resilience, Persistence).
 - **SENSE human-capital traits** (Working / Thinking / Social / Grit styles) + 6 Drivers.
 - **Team Health ABC**: Alliance, Balance, Coordination (3 constructs each), 1–5 scale by quarter.
 

@@ -48,7 +48,7 @@ window.SYMETA_INSIGHTS = {
         cognition: 'Below his other levers. Vision (49) sits at the bottom of the band — Daniel thinks concretely and tactically, which is a strength for delivery but means he relies on others to frame the future.',
         action: 'His signature strength. Execution (90) and Decision Making (82) are well above benchmark.',
         relational: 'Healthy. Direction (79) is strong — he is trusted to keep the team aligned to a plan.',
-        motivational: 'Excellent. Vitality (84), Resilience (80) and Persisting (83) make him relentless and self-driving.',
+        motivational: 'Excellent. Vitality (84), Resilience (80) and Persistence (83) make him relentless and self-driving.',
       },
       pillars: {
         execution: { summary: 'Well above benchmark — a genuine strength. Builds processes, manages operations, and turns plans into reality.',
@@ -90,7 +90,7 @@ window.SYMETA_INSIGHTS = {
     },
 
     sam: {
-      overall: 'Sam is the connective tissue of the team. Collaboration (89), Influence (84) and Direction (80) are excellent — Sam builds relationships, aligns people, and carries the culture. The watch-item is Adapting: Resilience (47) and Persisting (50) are the team’s lowest, and Sam’s overall trajectory has dipped over the last three quarters. This is a resilience and energy signal worth addressing before it affects performance.',
+      overall: 'Sam is the connective tissue of the team. Collaboration (89), Influence (84) and Direction (80) are excellent — Sam builds relationships, aligns people, and carries the culture. The watch-item is Adapting: Resilience (47) and Persistence (50) are the team’s lowest, and Sam’s overall trajectory has dipped over the last three quarters. This is a resilience and energy signal worth addressing before it affects performance.',
       cornerstones: {
         cognition: 'In range and balanced — a generalist’s profile that supports the relational role well.',
         action: 'Steady and in range across the board.',
@@ -168,7 +168,7 @@ window.SYMETA_INSIGHTS = {
       overall: 'Northwind is a well-composed founding team. Its four members cover all four levers with little wasted overlap: Maya drives Thinking, Daniel owns Operating, Priya supplies Innovation, and Sam anchors Relating. The team’s collective profile is balanced and broadly above benchmark — the kind of complementary spread that survives organisational crises.',
       composition: 'Balanced. Each lever has a clear owner, so strengths reinforce rather than duplicate. The averaged wheel hides this — drag individual members in and out to see how each one fills a specific quadrant.',
       complementary: 'Maya × Daniel is the engine: vision and strategy paired with execution and decisiveness. Priya extends the Thinking/Operating edge with exceptional Innovation and Resourcefulness. Sam multiplies all of it through best-in-team Collaboration and Influence.',
-      conflicts: 'Two watch-items. (1) Priya’s independent, low-Collaboration style can isolate the technical work from the rest of the team. (2) Sam’s Adapting scores — Resilience (47), Persisting (50) — are the team’s lowest and trending down, a resilience risk concentrated in the person who holds the relationships. Energy management, not capability, is the team’s soft spot.',
+      conflicts: 'Two watch-items. (1) Priya’s independent, low-Collaboration style can isolate the technical work from the rest of the team. (2) Sam’s Adapting scores — Resilience (47), Persistence (50) — are the team’s lowest and trending down, a resilience risk concentrated in the person who holds the relationships. Energy management, not capability, is the team’s soft spot.',
       teamHealth: {
         overall: 'Team Health is healthy and improving across all three ABCs. Alliance (3.9) and Balance (3.7) are solid; Coordination (3.3) is the lowest but showing the most movement.',
         alliance: 'Strong and rising, led by Cohesion (4.1). Psychological Safety (3.5) is the component to keep nurturing.',
