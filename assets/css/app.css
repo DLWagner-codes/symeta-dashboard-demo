@@ -210,6 +210,9 @@
 .trait .track { position: relative; height: 14px; border-radius: 7px; background: linear-gradient(90deg, var(--surface-3), var(--surface-2), var(--surface-3)); border: 1px solid var(--border); }
 .trait .track .mid { position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--border-strong); }
 .trait .track .pin { position: absolute; top: 50%; width: 16px; height: 16px; border-radius: 50%; transform: translate(-50%,-50%); border: 2px solid #fff; box-shadow: var(--shadow); }
+/* team comparison: one dot per member + dashed team-average line */
+.trait .track .cdot { position: absolute; top: 50%; width: 13px; height: 13px; border-radius: 50%; transform: translate(-50%,-50%); border: 2px solid var(--surface); box-shadow: var(--shadow); }
+.trait .track .meanline { position: absolute; top: -3px; bottom: -3px; width: 0; border-left: 2px dashed var(--text-mute); transform: translateX(-1px); opacity: .85; }
 
 /* ---------- misc ---------- */
 .legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--text-soft); margin-top: 8px; }

@@ -152,6 +152,26 @@
       <span class="bar"><span style="width:${x.v}%"></span></span></div>`).join('')}</div>`;
   }
 
+  /* ---------------- team trait comparison (Design 2: dots + team-average line) ---------------- */
+  function traitsCompareBlock(ids) {
+    return D.meta.traitGroups.map(g => `
+      <div style="margin-bottom:18px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2px">
+          <strong style="font-size:13.5px">${g.name}</strong>
+          <span class="muted" style="font-size:11.5px;max-width:55%;text-align:right">${g.blurb}</span>
+        </div>
+        ${g.traits.map(t => {
+          const vals = ids.map(id => ({ id, v: D.people[id].traits[t.id] }));
+          const mean = Math.round(avg(vals.map(x => x.v)));
+          return `<div class="trait"><div class="ends"><span>${t.left}</span><span>${t.right}</span></div>
+            <div class="track"><span class="mid"></span>
+              <span class="meanline" style="left:${mean}%" title="Team average ${mean}"></span>
+              ${vals.map(x => `<span class="cdot" style="left:${x.v}%;background:${D.people[x.id].color}" title="${D.people[x.id].name.split(' ')[0]}: ${x.v}"></span>`).join('')}
+            </div></div>`;
+        }).join('')}
+      </div>`).join('');
+  }
+
   /* ---------------- resource library ---------------- */
   function resourceCard(filterTags) {
     const items = D.resources;
@@ -300,7 +320,7 @@
   /* =====================================================================
      TIER 2 — team
      ===================================================================== */
-  const t2 = { teamId: 'alpha', active: null, sel: null, selCs: null, overlay: false, thComp: null };
+  const t2 = { teamId: 'alpha', tab: 'gears', active: null, sel: null, selCs: null, overlay: false, thComp: null };
 
   function viewTier2(teamId) {
     if (teamId && teamId !== t2.teamId) { t2.teamId = teamId; t2.active = null; t2.sel = null; t2.selCs = null; t2.thComp = null; }
@@ -332,8 +352,7 @@
       benchmarks: D.meta.benchmarks, selected: t2.sel || t2.selCs, size: 440, interactive: true,
     });
 
-    const gearsBody = `<div class="member-chips">${activeChips}
-        <button class="btn" id="overlayBtn" style="margin-left:auto">${t2.overlay ? 'Hide' : 'Show'} individuals</button></div>
+    const gearsSub = `
       <div class="team-builder">
         <div class="gears-wrap" style="grid-template-columns:230px 1fr">
           <div>${pillarList(scores, null, t2.sel, 'pillar')}</div>
@@ -346,6 +365,23 @@
           <div class="muted" style="font-size:11.5px;margin-top:10px">Drag chips between the team and the bench to model different compositions. Averages update instantly.</div></div>
       </div>
       ${teamSidePanel(scores)}`;
+
+    const humanSub = `
+      <div class="legend" style="margin:2px 0 16px">
+        ${t2.active.map(id => `<span class="it"><span class="sw" style="background:${D.people[id].color};border-radius:50%"></span>${D.people[id].name.split(' ')[0]}</span>`).join('')}
+        <span class="it"><span class="sw" style="width:0;height:13px;border-left:2px dashed var(--text-mute)"></span>Team average</span>
+      </div>
+      ${traitsCompareBlock(t2.active)}
+      <div class="muted" style="font-size:11.5px;margin-top:6px">Each dot is a member’s position on the trait spectrum; the dashed line is the team average. Adjust the roster from the 12 Gears tab.</div>`;
+
+    const gearsBody = `
+      <div class="member-chips">${activeChips}
+        ${t2.tab === 'gears' ? `<button class="btn" id="overlayBtn" style="margin-left:auto">${t2.overlay ? 'Hide' : 'Show'} individuals</button>` : ''}</div>
+      <div class="subtabs">
+        <button class="${t2.tab === 'gears' ? 'on' : ''}" data-t2tab="gears">12 Gears</button>
+        <button class="${t2.tab === 'human' ? 'on' : ''}" data-t2tab="human">Human Capital</button>
+      </div>
+      ${t2.tab === 'gears' ? gearsSub : humanSub}`;
 
     let body = `<div class="grid">`;
     body += card('Team Overview', gearsBody, { cls: 'col-12', sub: `Overall index ${idx}` });
@@ -419,6 +455,7 @@
 
   function wireTier2() {
     $('#view').querySelectorAll('[data-team]').forEach(b => b.onclick = () => location.hash = '#/tier2/' + b.dataset.team);
+    $('#view').querySelectorAll('[data-t2tab]').forEach(b => b.onclick = () => { t2.tab = b.dataset.t2tab; viewTier2(); });
     $('#view').querySelectorAll('[data-pillar]').forEach(b => b.onclick = () => { t2.sel = b.dataset.pillar; t2.selCs = null; viewTier2(); });
     $('#view').querySelectorAll('.gear-wedge,.gear-label').forEach(b => b.addEventListener('click', () => { t2.sel = b.dataset.pillar; t2.selCs = null; viewTier2(); }));
     $('#view').querySelectorAll('.gear-arc').forEach(b => b.addEventListener('click', () => { t2.selCs = b.dataset.cornerstone; t2.sel = null; viewTier2(); }));
