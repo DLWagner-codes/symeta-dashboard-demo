@@ -1,0 +1,112 @@
+/* ============================================================
+   SYMETA — Design Tokens
+   Brand-aligned with the dashboard mockups:
+   slate top bar, violet sidebar, light card grid, cornerstone
+   colored 12-gears wheel. Light is default; dark via [data-theme].
+   ============================================================ */
+
+:root {
+  /* ---- Brand / chrome ---- */
+  --brand-violet:        #5b3fe0;
+  --brand-violet-600:    #4b2fd0;
+  --brand-violet-700:    #3f22c0;
+  --brand-violet-soft:   #efeafe;
+  --topbar-from:         #5c5f68;
+  --topbar-to:           #44464e;
+
+  /* ---- Surfaces (light) ---- */
+  --bg:            #d9dbe0;   /* app canvas behind cards */
+  --surface:       #f4f5f7;   /* card body */
+  --surface-2:     #ffffff;   /* raised panels */
+  --surface-3:     #e9ebef;   /* inset wells */
+  --border:        #d2d5dc;
+  --border-strong: #b9bdc7;
+
+  /* ---- Text ---- */
+  --text:          #1d2027;
+  --text-soft:     #4b515c;
+  --text-mute:     #7a818d;
+  --text-invert:   #ffffff;
+
+  /* ---- Feedback ---- */
+  --good:    #1e9e54;
+  --warn:    #e8a317;
+  --bad:     #d6453d;
+  --info:    #2e86de;
+
+  /* ---- Score semantics (benchmark bands) ---- */
+  --score-strength:  #1e9e54;  /* > 75  */
+  --score-inrange:   #3f7fd6;  /* 50-75 */
+  --score-watch:     #e8a317;  /* 40-50 */
+  --score-liability: #d6453d;  /* < 40  */
+
+  /* ---- Cornerstones (4 quadrants of the 12 gears) ---- */
+  --c-cognition:     #2e86de;  /* blue   */
+  --c-action:        #27ae60;  /* green  */
+  --c-relational:    #e74c6f;  /* rose   */
+  --c-motivational:  #f39c12;  /* amber  */
+
+  /* per-pillar shades, light->dark within each cornerstone */
+  --p-vision:          #5fa8e8;
+  --p-strategy:        #2e86de;
+  --p-resourcefulness: #1b6cc9;
+  --p-execution:       #58c98a;
+  --p-innovation:      #27ae60;
+  --p-decision:        #1e8e4e;
+  --p-collaboration:   #f07e97;
+  --p-direction:       #e74c6f;
+  --p-influence:       #c8385a;
+  --p-autonomy:        #f7c04a;
+  --p-intensity:       #f39c12;
+  --p-tenacity:        #e67e22;
+
+  /* ---- Team Health (ABC) ---- */
+  --th-alliance:     #6a4cf0;
+  --th-balance:      #2e86de;
+  --th-coordination: #1e9e54;
+
+  /* ---- Geometry / type ---- */
+  --radius:    14px;
+  --radius-sm: 9px;
+  --radius-pill: 999px;
+  --shadow:    0 1px 2px rgba(20,22,30,.06), 0 6px 22px rgba(20,22,30,.10);
+  --shadow-lg: 0 10px 40px rgba(20,22,30,.22);
+  --ring:      0 0 0 3px rgba(91,63,224,.30);
+
+  --font: "Inter", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --mono: "SFMono-Regular", "Consolas", "Liberation Mono", monospace;
+
+  --sidebar-w: 64px;
+  --topbar-h:  56px;
+}
+
+/* ---- Dark theme ---- */
+[data-theme="dark"] {
+  --bg:            #0e1016;
+  --surface:       #171a22;
+  --surface-2:     #1f232d;
+  --surface-3:     #11141b;
+  --border:        #2a2f3b;
+  --border-strong: #39404f;
+
+  --text:          #eef1f6;
+  --text-soft:     #b9c0cc;
+  --text-mute:     #828b99;
+  --text-invert:   #0e1016;
+
+  --topbar-from:   #20242e;
+  --topbar-to:     #14171f;
+
+  --shadow:    0 1px 2px rgba(0,0,0,.4), 0 8px 26px rgba(0,0,0,.5);
+  --shadow-lg: 0 14px 48px rgba(0,0,0,.6);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

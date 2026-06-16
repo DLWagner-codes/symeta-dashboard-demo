@@ -1,0 +1,1107 @@
+{
+  "meta": {
+    "cornerstones": [
+      {
+        "id": "cognition",
+        "name": "Cognition",
+        "color": "var(--c-cognition)",
+        "blurb": "How founders see and make sense of the opportunity."
+      },
+      {
+        "id": "action",
+        "name": "Action",
+        "color": "var(--c-action)",
+        "blurb": "How founders turn ideas into operational reality."
+      },
+      {
+        "id": "relational",
+        "name": "Relational",
+        "color": "var(--c-relational)",
+        "blurb": "How founders build, align and move people."
+      },
+      {
+        "id": "motivational",
+        "name": "Motivational",
+        "color": "var(--c-motivational)",
+        "blurb": "How founders sustain drive, energy and grit."
+      }
+    ],
+    "pillars": [
+      {
+        "id": "vision",
+        "name": "Vision",
+        "cornerstone": "cognition",
+        "color": "var(--p-vision)",
+        "blurb": "Recognising opportunities and conceiving a mental map of the future."
+      },
+      {
+        "id": "strategy",
+        "name": "Strategy",
+        "cornerstone": "cognition",
+        "color": "var(--p-strategy)",
+        "blurb": "Leveraging business intelligence into a competitive plan."
+      },
+      {
+        "id": "resourcefulness",
+        "name": "Resourcefulness",
+        "cornerstone": "cognition",
+        "color": "var(--p-resourcefulness)",
+        "blurb": "Making the most of available financial, human and social capital."
+      },
+      {
+        "id": "execution",
+        "name": "Execution",
+        "cornerstone": "action",
+        "color": "var(--p-execution)",
+        "blurb": "Building a system for sustainable, frictionless operation."
+      },
+      {
+        "id": "innovation",
+        "name": "Innovation",
+        "cornerstone": "action",
+        "color": "var(--p-innovation)",
+        "blurb": "Competitively adapting to the changing needs of the market."
+      },
+      {
+        "id": "decision",
+        "name": "Decision Making",
+        "cornerstone": "action",
+        "color": "var(--p-decision)",
+        "blurb": "Making strong decisions under uncertainty and time pressure."
+      },
+      {
+        "id": "collaboration",
+        "name": "Collaboration",
+        "cornerstone": "relational",
+        "color": "var(--p-collaboration)",
+        "blurb": "Developing relationships and coordinating interdependent teamwork."
+      },
+      {
+        "id": "direction",
+        "name": "Direction",
+        "cornerstone": "relational",
+        "color": "var(--p-direction)",
+        "blurb": "Guiding the priorities and direction of the company."
+      },
+      {
+        "id": "influence",
+        "name": "Influence",
+        "cornerstone": "relational",
+        "color": "var(--p-influence)",
+        "blurb": "Persuading stakeholders to follow one’s lead under uncertainty."
+      },
+      {
+        "id": "autonomy",
+        "name": "Autonomy",
+        "cornerstone": "motivational",
+        "color": "var(--p-autonomy)",
+        "blurb": "Holding oneself accountable to high-performance standards."
+      },
+      {
+        "id": "intensity",
+        "name": "Intensity",
+        "cornerstone": "motivational",
+        "color": "var(--p-intensity)",
+        "blurb": "Managing one’s cognitive, emotional and physical resources."
+      },
+      {
+        "id": "tenacity",
+        "name": "Tenacity",
+        "cornerstone": "motivational",
+        "color": "var(--p-tenacity)",
+        "blurb": "Weathering inevitable problems, crises and failures."
+      }
+    ],
+    "benchmarks": {
+      "vision": [
+        48,
+        70
+      ],
+      "strategy": [
+        46,
+        66
+      ],
+      "resourcefulness": [
+        47,
+        67
+      ],
+      "execution": [
+        50,
+        70
+      ],
+      "innovation": [
+        45,
+        66
+      ],
+      "decision": [
+        48,
+        68
+      ],
+      "collaboration": [
+        50,
+        72
+      ],
+      "direction": [
+        49,
+        69
+      ],
+      "influence": [
+        46,
+        67
+      ],
+      "autonomy": [
+        47,
+        66
+      ],
+      "intensity": [
+        48,
+        68
+      ],
+      "tenacity": [
+        50,
+        70
+      ]
+    },
+    "traitGroups": [
+      {
+        "id": "working",
+        "name": "Working Styles",
+        "blurb": "Patterns of how you interact with work tasks and projects.",
+        "traits": [
+          {
+            "id": "organization",
+            "left": "Unstructured",
+            "right": "Structured"
+          },
+          {
+            "id": "conformity",
+            "left": "Conforming",
+            "right": "Non-Conforming"
+          },
+          {
+            "id": "curiosity",
+            "left": "Complacent",
+            "right": "Curious"
+          },
+          {
+            "id": "decisiveness",
+            "left": "Deliberate",
+            "right": "Decisive"
+          },
+          {
+            "id": "taskFocus",
+            "left": "Multiple-Task",
+            "right": "Single-Task"
+          }
+        ]
+      },
+      {
+        "id": "thinking",
+        "name": "Thinking Styles",
+        "blurb": "Patterns of thinking and reasoning with information.",
+        "traits": [
+          {
+            "id": "abstraction",
+            "left": "Concrete",
+            "right": "Abstract"
+          },
+          {
+            "id": "timeHorizon",
+            "left": "Past",
+            "right": "Future"
+          },
+          {
+            "id": "analysis",
+            "left": "Tactical",
+            "right": "Strategic"
+          },
+          {
+            "id": "systems",
+            "left": "Segmented",
+            "right": "Systems"
+          },
+          {
+            "id": "outlook",
+            "left": "Cynical",
+            "right": "Optimistic"
+          }
+        ]
+      },
+      {
+        "id": "social",
+        "name": "Social Styles",
+        "blurb": "Patterns of how you interact with others, emotions and social perception.",
+        "traits": [
+          {
+            "id": "teamwork",
+            "left": "Independent",
+            "right": "Collective"
+          },
+          {
+            "id": "connection",
+            "left": "Detached",
+            "right": "Connected"
+          },
+          {
+            "id": "trust",
+            "left": "Distrusting",
+            "right": "Trusting"
+          },
+          {
+            "id": "conflict",
+            "left": "Conflict-Averse",
+            "right": "Conflict-Tolerant"
+          },
+          {
+            "id": "assertiveness",
+            "left": "Reserved",
+            "right": "Bold"
+          }
+        ]
+      },
+      {
+        "id": "grit",
+        "name": "Grit Styles",
+        "blurb": "Patterns of how you interact with obstacles and setbacks.",
+        "traits": [
+          {
+            "id": "recovery",
+            "left": "Gradual Recovery",
+            "right": "Rapid Recovery"
+          },
+          {
+            "id": "risk",
+            "left": "Risk-Averse",
+            "right": "Risk-Seeking"
+          },
+          {
+            "id": "expressiveness",
+            "left": "Composed",
+            "right": "Expressive"
+          },
+          {
+            "id": "uncertainty",
+            "left": "Uncertainty-Averse",
+            "right": "Uncertainty-Tolerant"
+          },
+          {
+            "id": "adaptability",
+            "left": "Steadfast",
+            "right": "Adaptable"
+          }
+        ]
+      }
+    ],
+    "drivers": [
+      {
+        "id": "building",
+        "name": "Building & Creating"
+      },
+      {
+        "id": "learning",
+        "name": "Learning Opportunities"
+      },
+      {
+        "id": "impact",
+        "name": "Making an Impact"
+      },
+      {
+        "id": "intellectual",
+        "name": "Intellectual Stimulation"
+      },
+      {
+        "id": "passion",
+        "name": "Fueling Passion"
+      },
+      {
+        "id": "worklife",
+        "name": "Balancing Work-Life"
+      }
+    ],
+    "teamHealth": {
+      "components": [
+        {
+          "id": "alliance",
+          "name": "Alliance",
+          "color": "var(--th-alliance)",
+          "constructs": [
+            {
+              "id": "cohesion",
+              "name": "Cohesion",
+              "sample": "My team has a shared commitment to reach its performance goals."
+            },
+            {
+              "id": "psychSafety",
+              "name": "Psychological Safety",
+              "sample": "If I make a mistake on this team, it is often held against me. (reversed)"
+            },
+            {
+              "id": "trust",
+              "name": "Trust",
+              "sample": "Given my teammates’ track records, I see no reason to doubt their capability."
+            }
+          ]
+        },
+        {
+          "id": "balance",
+          "name": "Balance",
+          "color": "var(--th-balance)",
+          "constructs": [
+            {
+              "id": "roleClarity",
+              "name": "Role Clarity",
+              "sample": "Each team member understands their roles and responsibilities."
+            },
+            {
+              "id": "sharedModels",
+              "name": "Shared Mental Models",
+              "sample": "My team has a shared understanding of the goals and objectives for projects."
+            },
+            {
+              "id": "processAlign",
+              "name": "Process Alignment",
+              "sample": "Team members understand standardized processes and procedures."
+            }
+          ]
+        },
+        {
+          "id": "coordination",
+          "name": "Coordination",
+          "color": "var(--th-coordination)",
+          "constructs": [
+            {
+              "id": "conflictMgmt",
+              "name": "Conflict Management",
+              "sample": "My team knows how to deal with negative conflict between members."
+            },
+            {
+              "id": "agilePerf",
+              "name": "Agile Performance",
+              "sample": "If one member is absent, others know how to fill in for them."
+            },
+            {
+              "id": "teamComms",
+              "name": "Team Communication",
+              "sample": "It is easy to talk openly among members of my team."
+            }
+          ]
+        }
+      ],
+      "quarters": [
+        "Q3 2025",
+        "Q4 2025",
+        "Q1 2026",
+        "Q2 2026"
+      ]
+    },
+    "trendDates": [
+      "Q1 25",
+      "Q2 25",
+      "Q3 25",
+      "Q4 25",
+      "Q1 26",
+      "Q2 26"
+    ],
+    "asOf": "June 2026"
+  },
+  "teams": [
+    {
+      "id": "alpha",
+      "name": "Northwind",
+      "tagline": "Climate logistics SaaS",
+      "stage": "Seed",
+      "color": "#5b3fe0",
+      "memberIds": [
+        "maya",
+        "daniel",
+        "priya",
+        "sam"
+      ]
+    },
+    {
+      "id": "beta",
+      "name": "Lumen Health",
+      "tagline": "Digital health",
+      "stage": "Pre-seed",
+      "color": "#16a39c",
+      "memberIds": [
+        "alex",
+        "jordan"
+      ]
+    }
+  ],
+  "portfolio": {
+    "id": "horizon",
+    "name": "Horizon Accelerator — Spring Cohort",
+    "teamIds": [
+      "alpha",
+      "beta"
+    ]
+  },
+  "people": {
+    "maya": {
+      "name": "Maya Chen",
+      "role": "CEO & Co-founder",
+      "roleAbbr": "CEO",
+      "teamId": "alpha",
+      "color": "#5b3fe0",
+      "initials": "MC",
+      "pillars": {
+        "vision": 92,
+        "strategy": 84,
+        "resourcefulness": 71,
+        "execution": 55,
+        "innovation": 70,
+        "decision": 64,
+        "collaboration": 80,
+        "direction": 74,
+        "influence": 86,
+        "autonomy": 58,
+        "intensity": 62,
+        "tenacity": 69
+      },
+      "prev": {
+        "vision": 88,
+        "strategy": 80,
+        "resourcefulness": 69,
+        "execution": 51,
+        "innovation": 66,
+        "decision": 62,
+        "collaboration": 78,
+        "direction": 72,
+        "influence": 84,
+        "autonomy": 60,
+        "intensity": 63,
+        "tenacity": 66
+      },
+      "trend": [
+        68,
+        70,
+        71,
+        72,
+        73,
+        74
+      ],
+      "traits": {
+        "organization": 42,
+        "conformity": 70,
+        "curiosity": 82,
+        "decisiveness": 66,
+        "taskFocus": 35,
+        "abstraction": 80,
+        "timeHorizon": 84,
+        "analysis": 82,
+        "systems": 78,
+        "outlook": 76,
+        "teamwork": 68,
+        "connection": 64,
+        "trust": 60,
+        "conflict": 66,
+        "assertiveness": 78,
+        "recovery": 62,
+        "risk": 70,
+        "expressiveness": 66,
+        "uncertainty": 72,
+        "adaptability": 70
+      },
+      "drivers": {
+        "building": 88,
+        "learning": 80,
+        "impact": 84,
+        "intellectual": 78,
+        "passion": 82,
+        "worklife": 40
+      }
+    },
+    "daniel": {
+      "name": "Daniel Okoro",
+      "role": "COO & Co-founder",
+      "roleAbbr": "COO",
+      "teamId": "alpha",
+      "color": "#2e86de",
+      "initials": "DO",
+      "pillars": {
+        "vision": 49,
+        "strategy": 66,
+        "resourcefulness": 74,
+        "execution": 90,
+        "innovation": 58,
+        "decision": 82,
+        "collaboration": 67,
+        "direction": 79,
+        "influence": 61,
+        "autonomy": 84,
+        "intensity": 80,
+        "tenacity": 83
+      },
+      "prev": {
+        "vision": 50,
+        "strategy": 63,
+        "resourcefulness": 70,
+        "execution": 86,
+        "innovation": 55,
+        "decision": 79,
+        "collaboration": 64,
+        "direction": 75,
+        "influence": 59,
+        "autonomy": 82,
+        "intensity": 78,
+        "tenacity": 80
+      },
+      "trend": [
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "traits": {
+        "organization": 86,
+        "conformity": 40,
+        "curiosity": 55,
+        "decisiveness": 80,
+        "taskFocus": 70,
+        "abstraction": 38,
+        "timeHorizon": 55,
+        "analysis": 58,
+        "systems": 60,
+        "outlook": 58,
+        "teamwork": 52,
+        "connection": 48,
+        "trust": 66,
+        "conflict": 58,
+        "assertiveness": 60,
+        "recovery": 74,
+        "risk": 40,
+        "expressiveness": 38,
+        "uncertainty": 44,
+        "adaptability": 48
+      },
+      "drivers": {
+        "building": 70,
+        "learning": 66,
+        "impact": 78,
+        "intellectual": 60,
+        "passion": 64,
+        "worklife": 58
+      }
+    },
+    "priya": {
+      "name": "Priya Raman",
+      "role": "CTO",
+      "roleAbbr": "CTO",
+      "teamId": "alpha",
+      "color": "#27ae60",
+      "initials": "PR",
+      "pillars": {
+        "vision": 76,
+        "strategy": 72,
+        "resourcefulness": 85,
+        "execution": 70,
+        "innovation": 90,
+        "decision": 68,
+        "collaboration": 52,
+        "direction": 58,
+        "influence": 55,
+        "autonomy": 77,
+        "intensity": 71,
+        "tenacity": 74
+      },
+      "prev": {
+        "vision": 73,
+        "strategy": 69,
+        "resourcefulness": 82,
+        "execution": 66,
+        "innovation": 87,
+        "decision": 65,
+        "collaboration": 53,
+        "direction": 57,
+        "influence": 54,
+        "autonomy": 75,
+        "intensity": 70,
+        "tenacity": 71
+      },
+      "trend": [
+        69,
+        70,
+        71,
+        71,
+        72,
+        73
+      ],
+      "traits": {
+        "organization": 72,
+        "conformity": 66,
+        "curiosity": 88,
+        "decisiveness": 70,
+        "taskFocus": 64,
+        "abstraction": 86,
+        "timeHorizon": 76,
+        "analysis": 74,
+        "systems": 84,
+        "outlook": 60,
+        "teamwork": 34,
+        "connection": 40,
+        "trust": 55,
+        "conflict": 44,
+        "assertiveness": 42,
+        "recovery": 66,
+        "risk": 64,
+        "expressiveness": 44,
+        "uncertainty": 70,
+        "adaptability": 66
+      },
+      "drivers": {
+        "building": 90,
+        "learning": 92,
+        "impact": 70,
+        "intellectual": 88,
+        "passion": 76,
+        "worklife": 50
+      }
+    },
+    "sam": {
+      "name": "Sam Whitfield",
+      "role": "Head of Growth",
+      "roleAbbr": "GROWTH",
+      "teamId": "alpha",
+      "color": "#e74c6f",
+      "initials": "SW",
+      "pillars": {
+        "vision": 67,
+        "strategy": 60,
+        "resourcefulness": 63,
+        "execution": 58,
+        "innovation": 64,
+        "decision": 59,
+        "collaboration": 89,
+        "direction": 80,
+        "influence": 84,
+        "autonomy": 51,
+        "intensity": 47,
+        "tenacity": 50
+      },
+      "prev": {
+        "vision": 65,
+        "strategy": 60,
+        "resourcefulness": 62,
+        "execution": 59,
+        "innovation": 63,
+        "decision": 60,
+        "collaboration": 87,
+        "direction": 78,
+        "influence": 82,
+        "autonomy": 54,
+        "intensity": 52,
+        "tenacity": 55
+      },
+      "trend": [
+        66,
+        66,
+        65,
+        64,
+        64,
+        63
+      ],
+      "traits": {
+        "organization": 50,
+        "conformity": 58,
+        "curiosity": 64,
+        "decisiveness": 56,
+        "taskFocus": 40,
+        "abstraction": 56,
+        "timeHorizon": 60,
+        "analysis": 54,
+        "systems": 56,
+        "outlook": 72,
+        "teamwork": 80,
+        "connection": 84,
+        "trust": 78,
+        "conflict": 70,
+        "assertiveness": 80,
+        "recovery": 44,
+        "risk": 52,
+        "expressiveness": 74,
+        "uncertainty": 46,
+        "adaptability": 54
+      },
+      "drivers": {
+        "building": 64,
+        "learning": 72,
+        "impact": 80,
+        "intellectual": 62,
+        "passion": 78,
+        "worklife": 66
+      }
+    },
+    "alex": {
+      "name": "Alex Rivera",
+      "role": "CEO & Co-founder",
+      "roleAbbr": "CEO",
+      "teamId": "beta",
+      "color": "#f39c12",
+      "initials": "AR",
+      "pillars": {
+        "vision": 88,
+        "strategy": 79,
+        "resourcefulness": 66,
+        "execution": 50,
+        "innovation": 72,
+        "decision": 61,
+        "collaboration": 44,
+        "direction": 57,
+        "influence": 81,
+        "autonomy": 86,
+        "intensity": 70,
+        "tenacity": 64
+      },
+      "prev": {
+        "vision": 86,
+        "strategy": 77,
+        "resourcefulness": 65,
+        "execution": 52,
+        "innovation": 70,
+        "decision": 62,
+        "collaboration": 47,
+        "direction": 58,
+        "influence": 80,
+        "autonomy": 84,
+        "intensity": 71,
+        "tenacity": 66
+      },
+      "trend": [
+        66,
+        67,
+        68,
+        68,
+        69,
+        69
+      ],
+      "traits": {
+        "organization": 48,
+        "conformity": 72,
+        "curiosity": 80,
+        "decisiveness": 72,
+        "taskFocus": 38,
+        "abstraction": 82,
+        "timeHorizon": 86,
+        "analysis": 78,
+        "systems": 74,
+        "outlook": 74,
+        "teamwork": 30,
+        "connection": 42,
+        "trust": 48,
+        "conflict": 50,
+        "assertiveness": 78,
+        "recovery": 60,
+        "risk": 74,
+        "expressiveness": 60,
+        "uncertainty": 70,
+        "adaptability": 62
+      },
+      "drivers": {
+        "building": 86,
+        "learning": 78,
+        "impact": 88,
+        "intellectual": 80,
+        "passion": 84,
+        "worklife": 34
+      }
+    },
+    "jordan": {
+      "name": "Jordan Blake",
+      "role": "CTO & Co-founder",
+      "roleAbbr": "CTO",
+      "teamId": "beta",
+      "color": "#16a39c",
+      "initials": "JB",
+      "pillars": {
+        "vision": 84,
+        "strategy": 75,
+        "resourcefulness": 69,
+        "execution": 52,
+        "innovation": 80,
+        "decision": 58,
+        "collaboration": 47,
+        "direction": 54,
+        "influence": 73,
+        "autonomy": 83,
+        "intensity": 67,
+        "tenacity": 60
+      },
+      "prev": {
+        "vision": 82,
+        "strategy": 73,
+        "resourcefulness": 68,
+        "execution": 54,
+        "innovation": 78,
+        "decision": 60,
+        "collaboration": 49,
+        "direction": 55,
+        "influence": 72,
+        "autonomy": 81,
+        "intensity": 68,
+        "tenacity": 62
+      },
+      "trend": [
+        63,
+        64,
+        65,
+        65,
+        66,
+        67
+      ],
+      "traits": {
+        "organization": 52,
+        "conformity": 68,
+        "curiosity": 82,
+        "decisiveness": 64,
+        "taskFocus": 56,
+        "abstraction": 84,
+        "timeHorizon": 80,
+        "analysis": 74,
+        "systems": 80,
+        "outlook": 64,
+        "teamwork": 33,
+        "connection": 40,
+        "trust": 50,
+        "conflict": 46,
+        "assertiveness": 66,
+        "recovery": 56,
+        "risk": 66,
+        "expressiveness": 50,
+        "uncertainty": 66,
+        "adaptability": 60
+      },
+      "drivers": {
+        "building": 88,
+        "learning": 90,
+        "impact": 74,
+        "intellectual": 86,
+        "passion": 72,
+        "worklife": 42
+      }
+    }
+  },
+  "teamHealthData": {
+    "alpha": {
+      "components": {
+        "alliance": [
+          3.3,
+          3.5,
+          3.7,
+          3.9
+        ],
+        "balance": [
+          3.1,
+          3.3,
+          3.5,
+          3.7
+        ],
+        "coordination": [
+          2.8,
+          3,
+          3.1,
+          3.3
+        ]
+      },
+      "constructs": {
+        "cohesion": [
+          3.4,
+          3.7,
+          3.9,
+          4.1
+        ],
+        "psychSafety": [
+          3,
+          3.2,
+          3.4,
+          3.5
+        ],
+        "trust": [
+          3.5,
+          3.6,
+          3.8,
+          3.9
+        ],
+        "roleClarity": [
+          3.4,
+          3.7,
+          4,
+          4.2
+        ],
+        "sharedModels": [
+          3,
+          3.2,
+          3.5,
+          3.4
+        ],
+        "processAlign": [
+          2.9,
+          3,
+          3.2,
+          3.5
+        ],
+        "conflictMgmt": [
+          2.6,
+          2.8,
+          2.9,
+          3.1
+        ],
+        "agilePerf": [
+          3,
+          3.2,
+          3.4,
+          3.6
+        ],
+        "teamComms": [
+          2.8,
+          2.9,
+          3,
+          3.2
+        ]
+      }
+    },
+    "beta": {
+      "components": {
+        "alliance": [
+          2.6,
+          2.9,
+          2.7,
+          2.9
+        ],
+        "balance": [
+          2.4,
+          2.5,
+          2.6,
+          2.6
+        ],
+        "coordination": [
+          2.5,
+          2.7,
+          2.6,
+          2.8
+        ]
+      },
+      "constructs": {
+        "cohesion": [
+          2.8,
+          3.2,
+          3,
+          3.1
+        ],
+        "psychSafety": [
+          2.2,
+          2.5,
+          2.4,
+          2.5
+        ],
+        "trust": [
+          2.8,
+          3,
+          2.8,
+          3.1
+        ],
+        "roleClarity": [
+          2.2,
+          2.4,
+          2.5,
+          2.4
+        ],
+        "sharedModels": [
+          2.5,
+          2.6,
+          2.7,
+          2.7
+        ],
+        "processAlign": [
+          2.4,
+          2.5,
+          2.6,
+          2.7
+        ],
+        "conflictMgmt": [
+          2.3,
+          2.6,
+          2.4,
+          2.5
+        ],
+        "agilePerf": [
+          2.7,
+          2.9,
+          2.8,
+          3
+        ],
+        "teamComms": [
+          2.6,
+          2.7,
+          2.6,
+          2.9
+        ]
+      }
+    }
+  },
+  "resources": [
+    {
+      "title": "SENSE Interpretation Guide",
+      "desc": "How to read your 24-trait human-capital profile and the 12 Pillars.",
+      "tag": "SENSE",
+      "href": "#"
+    },
+    {
+      "title": "The 12 Pillars Workbook",
+      "desc": "Reflection prompts and exercises for each pillar and cornerstone.",
+      "tag": "12 Pillars",
+      "href": "#"
+    },
+    {
+      "title": "Vision & Strategy Playbook",
+      "desc": "Turn a compelling vision into a competitive, testable strategy.",
+      "tag": "Cognition",
+      "href": "#"
+    },
+    {
+      "title": "Execution Operating System",
+      "desc": "Cadences, ownership and process design for frictionless delivery.",
+      "tag": "Action",
+      "href": "#"
+    },
+    {
+      "title": "Co-Founder Alignment Canvas",
+      "desc": "Surface overlap, gaps and role boundaries between founders.",
+      "tag": "Team Health",
+      "href": "#"
+    },
+    {
+      "title": "Psychological Safety How-To Cycle",
+      "desc": "Structured feedback rituals that make it safe to raise concerns.",
+      "tag": "Alliance",
+      "href": "#"
+    },
+    {
+      "title": "Conflict Management Field Guide",
+      "desc": "Norms and scenarios for handling negative conflict early.",
+      "tag": "Coordination",
+      "href": "#"
+    },
+    {
+      "title": "Resilience & Tenacity Toolkit",
+      "desc": "Protect energy and bounce back from setbacks under pressure.",
+      "tag": "Grit",
+      "href": "#"
+    },
+    {
+      "title": "Role Clarity Matrix Template",
+      "desc": "Map primary and secondary responsibilities across the team.",
+      "tag": "Balance",
+      "href": "#"
+    },
+    {
+      "title": "Driver-Based Motivation Guide",
+      "desc": "Design work around what actually energises each founder.",
+      "tag": "Drivers",
+      "href": "#"
+    }
+  ]
+}

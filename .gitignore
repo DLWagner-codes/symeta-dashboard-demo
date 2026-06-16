@@ -1,0 +1,27 @@
+# ---- Confidential source material — NEVER publish ----
+Information documents and images/
+
+# ---- Local tooling / editor config ----
+.claude/
+.vscode/
+.idea/
+
+# ---- Secrets ----
+.env
+*.env
+!tools/.env.example
+tools/.env
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---- Node ----
+node_modules/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+*.tmp
