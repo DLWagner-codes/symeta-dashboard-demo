@@ -7,10 +7,11 @@
 
 :root {
   /* ---- Brand / chrome ---- */
-  --brand-violet:        #5b3fe0;
-  --brand-violet-600:    #4b2fd0;
-  --brand-violet-700:    #3f22c0;
-  --brand-violet-soft:   #efeafe;
+  --brand-violet:        #492fb2;   /* brand deep violet */
+  --brand-violet-600:    #3f29a0;
+  --brand-violet-700:    #34227e;
+  --brand-violet-mid:    #735ac6;   /* brand medium violet */
+  --brand-violet-soft:   #ece9f8;
   --topbar-from:         #5c5f68;
   --topbar-to:           #44464e;
 
@@ -40,30 +41,30 @@
   --score-watch:     #e8a317;  /* 40-50 */
   --score-liability: #d6453d;  /* < 40  */
 
-  /* ---- Cornerstones (4 quadrants of the 12 gears) ---- */
-  --c-cognition:     #2e86de;  /* blue   */
-  --c-action:        #27ae60;  /* green  */
-  --c-relational:    #e74c6f;  /* rose   */
-  --c-motivational:  #f39c12;  /* amber  */
+  /* ---- Cornerstones (4 quadrants of the 12 gears) — brand palette ---- */
+  --c-cognition:     #117fcf;  /* blue    */
+  --c-action:        #1bca79;  /* green   */
+  --c-relational:    #d1269c;  /* magenta */
+  --c-motivational:  #d85d2f;  /* orange  */
 
-  /* per-pillar shades, light->dark within each cornerstone */
-  --p-vision:          #5fa8e8;
-  --p-strategy:        #2e86de;
-  --p-resourcefulness: #1b6cc9;
-  --p-execution:       #58c98a;
-  --p-innovation:      #27ae60;
-  --p-decision:        #1e8e4e;
-  --p-collaboration:   #f07e97;
-  --p-direction:       #e74c6f;
-  --p-influence:       #c8385a;
-  --p-autonomy:        #f7c04a;
-  --p-intensity:       #f39c12;
-  --p-tenacity:        #e67e22;
+  /* per-pillar shades from the official SYMETA polar-chart palette */
+  --p-vision:          #6ce5e8;
+  --p-strategy:        #41b8d5;
+  --p-resourcefulness: #2d8bba;
+  --p-execution:       #55f16e;
+  --p-innovation:      #11c772;
+  --p-decision:        #3fad4a;
+  --p-collaboration:   #89294e;
+  --p-direction:       #bb4666;
+  --p-influence:       #dd5558;
+  --p-autonomy:        #ff8c42;
+  --p-intensity:       #ffa95a;
+  --p-tenacity:        #ffd04c;
 
-  /* ---- Team Health (ABC) ---- */
-  --th-alliance:     #6a4cf0;
-  --th-balance:      #2e86de;
-  --th-coordination: #1e9e54;
+  /* ---- Team Health (ABC) — brand-aligned ---- */
+  --th-alliance:     #735ac6;
+  --th-balance:      #2d8bba;
+  --th-coordination: #3fad4a;
 
   /* ---- Geometry / type ---- */
   --radius:    14px;
@@ -71,7 +72,7 @@
   --radius-pill: 999px;
   --shadow:    0 1px 2px rgba(20,22,30,.06), 0 6px 22px rgba(20,22,30,.10);
   --shadow-lg: 0 10px 40px rgba(20,22,30,.22);
-  --ring:      0 0 0 3px rgba(91,63,224,.30);
+  --ring:      0 0 0 3px rgba(73,47,178,.35);
 
   --font: "Inter", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
   --mono: "SFMono-Regular", "Consolas", "Liberation Mono", monospace;

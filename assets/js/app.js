@@ -125,7 +125,7 @@
             delta = `<span class="delta ${cls}">${d > 0 ? '▲' : d < 0 ? '▼' : '—'}${d !== 0 ? Math.abs(d) : ''}</span>`;
           }
           return `<div class="row ${sel === p.id ? 'sel' : ''}" ${clickAttr ? `data-${clickAttr}="${p.id}" style="cursor:pointer"` : ''}>
-            <span class="name">${p.name}</span><span><span class="val" style="color:${p.color}">${v}</span>${delta}</span></div>`;
+            <span class="name"><span class="pdot" style="background:${p.color}"></span>${p.name}</span><span><span class="val">${v}</span>${delta}</span></div>`;
         }).join('') + `</div>`;
     }).join('') + `</div>`;
   }
