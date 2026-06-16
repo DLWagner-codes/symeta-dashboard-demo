@@ -5,10 +5,10 @@
      • Team Alpha (Northwind) — a healthy 4-person team with
        complementary strengths across the 4 cornerstones.
      • Team Beta  (Lumen)     — two co-founders who overlap
-       heavily (both high Cognition/Autonomy) and share a gap
-       in Action + Relational  → co-founder-misalignment demo.
+       heavily (both high Thinking/Vitality) and share a gap
+       in Operating + Relating  → co-founder-misalignment demo.
 
-   Pillar scores: 0–100  (benchmark bands ~45–70; <40 liability,
+   Gear scores: 0–100  (benchmark bands ~45–70; <40 liability,
    40–49 watch, in band = in range, ≥75 strength).
    Trait scores: 0–100   (0 = left pole, 100 = right pole, 50 = balanced).
    Team Health: 1–5 Likert, tracked by quarter.
@@ -20,10 +20,10 @@ window.SYMETA = (function () {
 
   /* ---------------- META: framework definitions ---------------- */
   const cornerstones = [
-    { id: 'cognition',    name: 'Cognition',    color: 'var(--c-cognition)',    blurb: 'How founders see and make sense of the opportunity.' },
-    { id: 'action',       name: 'Action',       color: 'var(--c-action)',       blurb: 'How founders turn ideas into operational reality.' },
-    { id: 'relational',   name: 'Relational',   color: 'var(--c-relational)',   blurb: 'How founders build, align and move people.' },
-    { id: 'motivational', name: 'Motivational', color: 'var(--c-motivational)', blurb: 'How founders sustain drive, energy and grit.' },
+    { id: 'cognition',    name: 'Thinking',     color: 'var(--c-cognition)',    blurb: 'How founders see and make sense of the opportunity.' },
+    { id: 'action',       name: 'Operating',    color: 'var(--c-action)',       blurb: 'How founders turn ideas into operational reality.' },
+    { id: 'relational',   name: 'Relating',     color: 'var(--c-relational)',   blurb: 'How founders build, align and move people.' },
+    { id: 'motivational', name: 'Adapting',     color: 'var(--c-motivational)', blurb: 'How founders sustain drive, energy and adaptability.' },
   ];
 
   // order matters: the 12 gears are drawn clockwise in this order
@@ -37,9 +37,9 @@ window.SYMETA = (function () {
     { id:'collaboration',   name:'Collaboration',   cornerstone:'relational',   color:'var(--p-collaboration)',   blurb:'Developing relationships and coordinating interdependent teamwork.' },
     { id:'direction',       name:'Direction',       cornerstone:'relational',   color:'var(--p-direction)',       blurb:'Guiding the priorities and direction of the company.' },
     { id:'influence',       name:'Influence',       cornerstone:'relational',   color:'var(--p-influence)',       blurb:'Persuading stakeholders to follow one’s lead under uncertainty.' },
-    { id:'autonomy',        name:'Autonomy',        cornerstone:'motivational', color:'var(--p-autonomy)',        blurb:'Holding oneself accountable to high-performance standards.' },
-    { id:'intensity',       name:'Intensity',       cornerstone:'motivational', color:'var(--p-intensity)',       blurb:'Managing one’s cognitive, emotional and physical resources.' },
-    { id:'tenacity',        name:'Tenacity',        cornerstone:'motivational', color:'var(--p-tenacity)',        blurb:'Weathering inevitable problems, crises and failures.' },
+    { id:'autonomy',        name:'Vitality',        cornerstone:'motivational', color:'var(--p-autonomy)',        blurb:'Holding oneself accountable to high-performance standards.' },
+    { id:'intensity',       name:'Resilience',      cornerstone:'motivational', color:'var(--p-intensity)',       blurb:'Managing one’s cognitive, emotional and physical resources.' },
+    { id:'tenacity',        name:'Persisting',      cornerstone:'motivational', color:'var(--p-tenacity)',        blurb:'Weathering inevitable problems, crises and failures.' },
   ];
 
   const benchmarks = {
@@ -238,14 +238,14 @@ window.SYMETA = (function () {
 
   /* ---------------- RESOURCE LIBRARY ---------------- */
   const resources = [
-    { title:'SENSE Interpretation Guide',          desc:'How to read your 24-trait human-capital profile and the 12 Pillars.', tag:'SENSE', href:'#' },
-    { title:'The 12 Pillars Workbook',             desc:'Reflection prompts and exercises for each pillar and cornerstone.',     tag:'12 Pillars', href:'#' },
-    { title:'Vision & Strategy Playbook',          desc:'Turn a compelling vision into a competitive, testable strategy.',       tag:'Cognition', href:'#' },
-    { title:'Execution Operating System',          desc:'Cadences, ownership and process design for frictionless delivery.',     tag:'Action', href:'#' },
+    { title:'SENSE Interpretation Guide',          desc:'How to read your 24-trait human-capital profile and the 12 Gears.',    tag:'SENSE', href:'#' },
+    { title:'The 12 Gears Workbook',               desc:'Reflection prompts and exercises for each gear and lever.',             tag:'12 Gears', href:'#' },
+    { title:'Vision & Strategy Playbook',          desc:'Turn a compelling vision into a competitive, testable strategy.',       tag:'Thinking', href:'#' },
+    { title:'Execution Operating System',          desc:'Cadences, ownership and process design for frictionless delivery.',     tag:'Operating', href:'#' },
     { title:'Co-Founder Alignment Canvas',         desc:'Surface overlap, gaps and role boundaries between founders.',           tag:'Team Health', href:'#' },
     { title:'Psychological Safety How-To Cycle',   desc:'Structured feedback rituals that make it safe to raise concerns.',      tag:'Alliance', href:'#' },
     { title:'Conflict Management Field Guide',     desc:'Norms and scenarios for handling negative conflict early.',             tag:'Coordination', href:'#' },
-    { title:'Resilience & Tenacity Toolkit',       desc:'Protect energy and bounce back from setbacks under pressure.',          tag:'Grit', href:'#' },
+    { title:'Resilience & Persistence Toolkit',    desc:'Protect energy and bounce back from setbacks under pressure.',          tag:'Grit', href:'#' },
     { title:'Role Clarity Matrix Template',        desc:'Map primary and secondary responsibilities across the team.',           tag:'Balance', href:'#' },
     { title:'Driver-Based Motivation Guide',       desc:'Design work around what actually energises each founder.',              tag:'Drivers', href:'#' },
   ];

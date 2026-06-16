@@ -223,7 +223,7 @@
       gearsBody += `<div class="gears-wrap">
         <div>${pillarList(person.pillars, t1.showPrev ? person.prev : null, t1.sel, 'pillar')}</div>
         <div>${wheel}<div class="legend"><span class="it"><span class="sw" style="background:var(--text-mute);opacity:.3"></span>Benchmark range</span>
-          <span class="muted" style="font-size:11.5px">Click a pillar or cornerstone for its cached insight</span></div></div>
+          <span class="muted" style="font-size:11.5px">Click a gear or lever for its cached insight</span></div></div>
         <div>${side}</div></div>`;
     } else if (t1.tab === 'human') {
       gearsBody += `<div style="display:grid;grid-template-columns:1fr 320px;gap:18px">
@@ -241,11 +241,11 @@
       const series = [{ name: person.name.split(' ')[0], color: person.color, values: person.trend }];
       gearsBody += `<div style="display:grid;grid-template-columns:1fr 320px;gap:18px">
         <div>${CH.trendLine({ xLabels: D.meta.trendDates, series, min: 40, max: 100, width: 560, height: 280 })}
-          <div class="muted" style="font-size:12px;margin-top:6px">Overall capability index across assessments. Toggle pillar deltas with the button.</div></div>
+          <div class="muted" style="font-size:12px;margin-top:6px">Overall capability index across assessments. Toggle gear deltas with the button.</div></div>
         <div>${insightBox('Change over time', `<p>Current overall index <strong>${overallIndex}</strong>. ${person.trend[5] >= person.trend[0]
           ? 'Trajectory is positive across the last six administrations.'
-          : 'Trajectory has softened recently — see the Motivational cornerstone insight.'}</p>`)}
-          <button class="btn" id="prevToggle" style="margin-top:10px">${t1.showPrev ? 'Hide' : 'Show'} pillar deltas vs last assessment</button></div></div>`;
+          : 'Trajectory has softened recently — see the Adapting lever insight.'}</p>`)}
+          <button class="btn" id="prevToggle" style="margin-top:10px">${t1.showPrev ? 'Hide' : 'Show'} gear deltas vs last assessment</button></div></div>`;
     }
     body += card('Individual Overview', gearsBody, { cls: 'col-7', sub: `Overall index ${overallIndex}` });
 
@@ -253,7 +253,7 @@
     body += resourceCard();
     body += `</div>`;
 
-    $('#view').innerHTML = head + `<div class="tier-note">${ico.spark} Tier 1 shows one founder’s SENSE profile: the 12 Pillars wheel, the underlying human-capital traits, drivers, and change over time — each level carries a cached AI insight.</div>` + body;
+    $('#view').innerHTML = head + `<div class="tier-note">${ico.spark} Tier 1 shows one founder’s SENSE profile: the 12 Gears wheel, the underlying human-capital traits, drivers, and change over time — each level carries a cached AI insight.</div>` + body;
     wireTier1();
   }
 
@@ -290,11 +290,11 @@
   }
   function exportPersonCSV(id) {
     const p = D.people[id];
-    const rows = [['Pillar', 'Cornerstone', 'Score', 'Prev', 'Benchmark low', 'Benchmark high', 'Status']];
+    const rows = [['Gear', 'Lever', 'Score', 'Prev', 'Benchmark low', 'Benchmark high', 'Status']];
     D.meta.pillars.forEach(pl => rows.push([pl.name, csById[pl.cornerstone].name, p.pillars[pl.id], p.prev[pl.id], D.meta.benchmarks[pl.id][0], D.meta.benchmarks[pl.id][1], statusOf(p.pillars[pl.id]).t]));
     rows.push([]); rows.push(['Trait', 'Value (0=left,100=right)']);
     D.meta.traitGroups.forEach(g => g.traits.forEach(t => rows.push([`${t.left}–${t.right}`, p.traits[t.id]])));
-    download(`symeta_${id}_pillars.csv`, csv(rows), 'text/csv');
+    download(`symeta_${id}_gears.csv`, csv(rows), 'text/csv');
   }
 
   /* =====================================================================
@@ -353,7 +353,7 @@
     body += resourceCard();
     body += `</div>`;
 
-    $('#view').innerHTML = head + `<div class="tier-note">${ico.spark} Tier 2 averages the team across the 12 Pillars, lets you drag members in and out to test composition, and adds the Team Health (ABC) assessment with its own cached insights.</div>` + body;
+    $('#view').innerHTML = head + `<div class="tier-note">${ico.spark} Tier 2 averages the team across the 12 Gears, lets you drag members in and out to test composition, and adds the Team Health (ABC) assessment with its own cached insights.</div>` + body;
     wireTier2();
   }
 
@@ -513,7 +513,7 @@
     const body = `<div class="kpi-row" style="margin-bottom:18px">${kpis}</div>
       <div class="grid">${teamCards}${portfolioInsight}</div>`;
 
-    $('#view').innerHTML = head + `<div class="tier-note">${ico.spark} Tier 3 compares whole teams across the cohort. Cards for the same team (12 Pillars + Team Health) are grouped, with a portfolio-level cached insight that contrasts the two startups.</div>` + body;
+    $('#view').innerHTML = head + `<div class="tier-note">${ico.spark} Tier 3 compares whole teams across the cohort. Cards for the same team (12 Gears + Team Health) are grouped, with a portfolio-level cached insight that contrasts the two startups.</div>` + body;
     const cb = $('#csvBtn'); if (cb) cb.onclick = exportPortfolioCSV;
     const pb = $('#pdfBtn'); if (pb) pb.onclick = () => window.print();
   }
@@ -545,7 +545,7 @@
         <span class="btn primary" style="padding:5px 12px">Open</span></a>`).join('');
 
     const body = `<div class="grid">
-      ${card('Tier 1 · Individual', `<p class="muted" style="margin-top:0">One founder’s SENSE profile — 12 Pillars wheel, human-capital traits, drivers and progress.</p>${t1cards}`, { cls: 'col-4' })}
+      ${card('Tier 1 · Individual', `<p class="muted" style="margin-top:0">One founder’s SENSE profile — 12 Gears wheel, human-capital traits, drivers and progress.</p>${t1cards}`, { cls: 'col-4' })}
       ${card('Tier 2 · Team', `<p class="muted" style="margin-top:0">A team’s averaged profile with drag-and-drop composition and the Team Health (ABC) pulse.</p>${t2cards}
         <div class="muted" style="font-size:11.5px;margin-top:10px">Northwind = healthy, complementary 4-person team. Lumen = two overlapping co-founders (alignment risk).</div>`, { cls: 'col-4' })}
       ${card('Tier 3 · Portfolio', `<p class="muted" style="margin-top:0">Compare both startups across the cohort with a portfolio-level read.</p>
@@ -553,7 +553,7 @@
     </div>`;
 
     const intro = `<div class="page-head"><div><h1>SYMETA — interactive demo</h1>
-      <div class="sub">Pre-loaded data for 6 founders across 2 startups · 12 Pillars of Entrepreneurship + Team Health · cached AI insights</div></div></div>`;
+      <div class="sub">Pre-loaded data for 6 founders across 2 startups · 12 Gears of Entrepreneurship + Team Health · cached AI insights</div></div></div>`;
     $('#view').innerHTML = intro + body;
   }
 

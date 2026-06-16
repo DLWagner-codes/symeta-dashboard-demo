@@ -2,7 +2,7 @@
 
 An interactive, **dependency-free** demo of SYMETA's entrepreneurial human-capital
 dashboards. It ships with pre-loaded (synthetic) data for **6 founders across 2 startups**
-and renders **Tier 1 / Tier 2 / Tier 3** views over the **12 Pillars of Entrepreneurship**
+and renders **Tier 1 / Tier 2 / Tier 3** views over the **12 Gears of Entrepreneurship**
 and the **Team Health (ABC)** assessment, with cached AI-style insights at every level.
 
 > This is a demo. All names and scores are fictional and hand-crafted to illustrate the
@@ -15,20 +15,20 @@ and the **Team Health (ABC)** assessment, with cached AI-style insights at every
 
 | Tier | View | Highlights |
 |------|------|-----------|
-| **Tier 1** | Individual | 12-Pillars polar "gears" wheel with benchmark bands, drill-down to human-capital traits (bipolar plots) and drivers, longitudinal progress, cached AI insight at the overall / cornerstone / pillar level, resource library, CSV + print-to-PDF. |
+| **Tier 1** | Individual | 12-Gears polar wheel with benchmark bands, drill-down to human-capital traits (bipolar plots) and drivers, longitudinal progress, cached AI insight at the overall / lever / gear level, resource library, CSV + print-to-PDF. |
 | **Tier 2** | Team | Team-averaged wheel with **drag-and-drop** member composition (instant recompute), individual overlays, complementary-strengths & conflict/balance insights, **Team Health (ABC)** grouped columns with construct drill-down. |
-| **Tier 3** | Portfolio | Compares both startups across a cohort: capability index KPIs, grouped per-team cards (Pillars + Team Health), and a portfolio-level cross-team read with recommendations. |
+| **Tier 3** | Portfolio | Compares both startups across a cohort: capability index KPIs, grouped per-team cards (Gears + Team Health), and a portfolio-level cross-team read with recommendations. |
 
 The two teams are deliberately contrasted:
 
-- **Northwind** — a healthy, complementary 4-person team (each cornerstone has a clear owner).
-- **Lumen Health** — two overlapping co-founders (both strong in Cognition/Autonomy, both
+- **Northwind** — a healthy, complementary 4-person team (each lever has a clear owner).
+- **Lumen Health** — two overlapping co-founders (both strong in Thinking/Vitality, both
   thin in Execution/Collaboration) → a classic co-founder-misalignment story.
 
 ### The framework
-- **12 Pillars** in **4 cornerstones**: Cognition (Vision, Strategy, Resourcefulness),
-  Action (Execution, Innovation, Decision Making), Relational (Collaboration, Direction,
-  Influence), Motivational (Autonomy, Intensity, Tenacity).
+- **12 Gears** in **4 levers**: Thinking (Vision, Strategy, Resourcefulness),
+  Operating (Execution, Innovation, Decision Making), Relating (Collaboration, Direction,
+  Influence), Adapting (Vitality, Resilience, Persisting).
 - **SENSE human-capital traits** (Working / Thinking / Social / Grit styles) + 6 Drivers.
 - **Team Health ABC**: Alliance, Balance, Coordination (3 constructs each), 1–5 scale by quarter.
 

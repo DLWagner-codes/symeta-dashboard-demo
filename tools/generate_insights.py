@@ -32,13 +32,13 @@ MODEL = "claude-sonnet-4-6"
 
 SYSTEM = """You are SYMETA's assessment interpreter. SYMETA measures entrepreneurial human
 capital through the SENSE assessment (24 bipolar traits across Working, Thinking, Social and
-Grit styles, plus motivational Drivers) which rolls up into the 12 Pillars of Entrepreneurship,
-organised in 4 cornerstones:
-  - Cognition: Vision, Strategy, Resourcefulness
-  - Action: Execution, Innovation, Decision Making
-  - Relational: Collaboration, Direction, Influence
-  - Motivational: Autonomy, Intensity, Tenacity
-Pillar scores run 0-100 (benchmark bands ~45-70; <40 is a liability, >=75 a strength). Team
+Grit styles, plus motivational Drivers) which rolls up into the 12 Gears of Entrepreneurship,
+organised in 4 levers:
+  - Thinking: Vision, Strategy, Resourcefulness
+  - Operating: Execution, Innovation, Decision Making
+  - Relating: Collaboration, Direction, Influence
+  - Adapting: Vitality, Resilience, Persisting
+Gear scores run 0-100 (benchmark bands ~45-70; <40 is a liability, >=75 a strength). Team
 Health is measured on the ABC model (Alliance, Balance, Coordination) on a 1-5 scale.
 
 Voice: concise, evidence-grounded, developmental (never deterministic about performance or
@@ -59,7 +59,7 @@ def person_prompt(d, pid):
     team = next(t for t in d["teams"] if t["id"] == p["teamId"])
     return f"""Founder: {p['name']} — {p['role']} at {team['name']} ({team['tagline']}).
 
-Pillar scores (0-100): {json.dumps(p['pillars'])}
+Gear scores (0-100): {json.dumps(p['pillars'])}
 Previous assessment:   {json.dumps(p['prev'])}
 Traits (0=left pole, 100=right pole): {json.dumps(p['traits'])}
 Drivers (0-100): {json.dumps(p['drivers'])}
@@ -67,8 +67,8 @@ Drivers (0-100): {json.dumps(p['drivers'])}
 Produce JSON with this exact schema:
 {{
   "overall": "2-3 sentence read of this founder",
-  "cornerstones": {{"cognition":"1-2 sentences", "action":"...", "relational":"...", "motivational":"..."}},
-  "pillars": {{ "<pillarId>": {{"summary":"1-2 sentences", "actions":["...","..."]}} }},  // only the 2-4 most notable pillars (strengths + liabilities)
+  "cornerstones": {{"cognition":"1-2 sentences", "action":"...", "relational":"...", "motivational":"..."}},  // the 4 levers: Thinking / Operating / Relating / Adapting (keys are internal ids)
+  "pillars": {{ "<gearId>": {{"summary":"1-2 sentences", "actions":["...","..."]}} }},  // only the 2-4 most notable gears (strengths + liabilities); keys are gear ids
   "styles": {{"working":"...", "thinking":"...", "social":"...", "grit":"..."}},
   "drivers": "1-2 sentences on what energises them, flag low work-life balance if relevant"
 }}"""
@@ -80,7 +80,7 @@ def team_prompt(d, tid):
     th = d["teamHealthData"][tid]["components"]
     return f"""Team: {t['name']} ({t['tagline']}, {t['stage']} stage), {len(t['memberIds'])} founders.
 
-Member pillar scores: {json.dumps(members)}
+Member gear scores: {json.dumps(members)}
 Team Health by quarter (Alliance/Balance/Coordination, 1-5): {json.dumps(th)}
 
 Produce JSON with this exact schema:
@@ -105,7 +105,7 @@ def portfolio_prompt(d):
         }
     return f"""Cohort: {d['portfolio']['name']} — comparing teams {list(summ.keys())}.
 
-Team-average pillar scores: {json.dumps(summ)}
+Team-average gear scores: {json.dumps(summ)}
 
 Produce JSON with this exact schema:
 {{

@@ -1,7 +1,7 @@
 /* ============================================================
    SYMETA — Design Tokens
    Brand-aligned with the dashboard mockups:
-   slate top bar, violet sidebar, light card grid, cornerstone
+   slate top bar, violet sidebar, light card grid, lever
    colored 12-gears wheel. Light is default; dark via [data-theme].
    ============================================================ */
 
@@ -41,13 +41,13 @@
   --score-watch:     #e8a317;  /* 40-50 */
   --score-liability: #d6453d;  /* < 40  */
 
-  /* ---- Cornerstones (4 quadrants of the 12 gears) — brand palette ---- */
+  /* ---- Levers (4 quadrants of the 12 gears) — brand palette ---- */
   --c-cognition:     #117fcf;  /* blue    */
   --c-action:        #1bca79;  /* green   */
   --c-relational:    #d1269c;  /* magenta */
   --c-motivational:  #d85d2f;  /* orange  */
 
-  /* per-pillar shades from the official SYMETA polar-chart palette */
+  /* per-gear shades from the official SYMETA polar-chart palette */
   --p-vision:          #6ce5e8;
   --p-strategy:        #41b8d5;
   --p-resourcefulness: #2d8bba;

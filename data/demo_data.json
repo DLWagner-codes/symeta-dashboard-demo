@@ -3,27 +3,27 @@
     "cornerstones": [
       {
         "id": "cognition",
-        "name": "Cognition",
+        "name": "Thinking",
         "color": "var(--c-cognition)",
         "blurb": "How founders see and make sense of the opportunity."
       },
       {
         "id": "action",
-        "name": "Action",
+        "name": "Operating",
         "color": "var(--c-action)",
         "blurb": "How founders turn ideas into operational reality."
       },
       {
         "id": "relational",
-        "name": "Relational",
+        "name": "Relating",
         "color": "var(--c-relational)",
         "blurb": "How founders build, align and move people."
       },
       {
         "id": "motivational",
-        "name": "Motivational",
+        "name": "Adapting",
         "color": "var(--c-motivational)",
-        "blurb": "How founders sustain drive, energy and grit."
+        "blurb": "How founders sustain drive, energy and adaptability."
       }
     ],
     "pillars": [
@@ -92,21 +92,21 @@
       },
       {
         "id": "autonomy",
-        "name": "Autonomy",
+        "name": "Vitality",
         "cornerstone": "motivational",
         "color": "var(--p-autonomy)",
         "blurb": "Holding oneself accountable to high-performance standards."
       },
       {
         "id": "intensity",
-        "name": "Intensity",
+        "name": "Resilience",
         "cornerstone": "motivational",
         "color": "var(--p-intensity)",
         "blurb": "Managing one’s cognitive, emotional and physical resources."
       },
       {
         "id": "tenacity",
-        "name": "Tenacity",
+        "name": "Persisting",
         "cornerstone": "motivational",
         "color": "var(--p-tenacity)",
         "blurb": "Weathering inevitable problems, crises and failures."
@@ -1045,26 +1045,26 @@
   "resources": [
     {
       "title": "SENSE Interpretation Guide",
-      "desc": "How to read your 24-trait human-capital profile and the 12 Pillars.",
+      "desc": "How to read your 24-trait human-capital profile and the 12 Gears.",
       "tag": "SENSE",
       "href": "#"
     },
     {
-      "title": "The 12 Pillars Workbook",
-      "desc": "Reflection prompts and exercises for each pillar and cornerstone.",
-      "tag": "12 Pillars",
+      "title": "The 12 Gears Workbook",
+      "desc": "Reflection prompts and exercises for each gear and lever.",
+      "tag": "12 Gears",
       "href": "#"
     },
     {
       "title": "Vision & Strategy Playbook",
       "desc": "Turn a compelling vision into a competitive, testable strategy.",
-      "tag": "Cognition",
+      "tag": "Thinking",
       "href": "#"
     },
     {
       "title": "Execution Operating System",
       "desc": "Cadences, ownership and process design for frictionless delivery.",
-      "tag": "Action",
+      "tag": "Operating",
       "href": "#"
     },
     {
@@ -1086,7 +1086,7 @@
       "href": "#"
     },
     {
-      "title": "Resilience & Tenacity Toolkit",
+      "title": "Resilience & Persistence Toolkit",
       "desc": "Protect energy and bounce back from setbacks under pressure.",
       "tag": "Grit",
       "href": "#"
